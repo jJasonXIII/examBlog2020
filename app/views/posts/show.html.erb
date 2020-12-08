@@ -1,0 +1,14 @@
+<%= render @post %>
+<h4><%= Post.human_attribute_name(:comments) %></h4>
+<% if @post.comments.blank? %>
+<div class="alert alert-info">
+<%= t('.comments_not_found') %>
+</div>
+<% else %>
+<%= render @post.comments %>
+<%end%>
+<%= render 'comments/form', comment: @comment %>
+<div class="text-muted">
+<%= "#{Post.human_attribute_name(:views_count)}:" %>
+<%= @post.views_count %>
+</div>

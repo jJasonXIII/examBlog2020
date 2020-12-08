@@ -1,0 +1,114 @@
+ru:
+  app:
+    name: Блоги
+  activerecord:
+    models:
+      user: Пользователь
+      post: Пост
+      comment: Комментарий
+    attributes:
+      comment:
+        post: Пост
+        post_id: Пост
+        user: Пользователь
+        user_id: Пользователь
+        body: Текст комментария
+      post:
+        comments: Комментарии
+        comment_ids: Комментарии
+        user: Пользователь
+        user_id: Пользователь
+        title: Заголовок
+        body: Текст
+        views_count: Количество просмотров
+      user:
+        login: Имя пользователя
+        name: Имя
+        password: Пароль
+        password_confirmation: Пароль (повторно)
+        admin: Администратор
+    errors:
+      title: При сохранении произошли ошибки
+      models:
+        post:
+          check_err: Вы уже добавили пять постов за последние сутки
+  helpers:
+    forbidden: Доступ запрещён
+    sure: Вы уверены?
+    submit:
+      create: Сохранить
+      submit: Сохранить
+      update: Сохранить
+
+  users:
+    new:
+      btn: Зарегистрироваться
+      title: Регистрация
+    form:
+      submit: Зарегистрироваться
+    create:
+      success: Регистрация успешно завершена
+    index:
+      btn: Пользователи
+      title: Пользователи
+    show:
+      btn: Профиль
+    edit:
+      btn: Редактировать
+      title: Редактирование пользователя
+    update:  
+      success: Пользователь изменён
+    destroy:
+      btn: Удалить
+      success: Пользователь удалён
+  sessions:
+    destroy:
+      btn: Выйти
+    new:
+      btn: Войти
+      submit: Войти
+    create:
+      user_not_found: Пользователь не найден
+      invalid_password: Неверное имя пользователя или пароль
+      success: Вход выполнен
+    destroy:
+      btn: Выйти
+      success: Выход выполнен
+  posts:
+    index:
+      title: Посты
+      btn: Посты
+    new:
+      btn: Добавить пост
+      title: Добавление поста
+    create:
+      success: Пост добавлен
+    show:
+      btn: Подробнее
+      comments_not_found: Комментарии не найдены
+    edit:
+      btn: Редактировать
+      title: Редактирование поста
+    update:
+      success: Пост изменён
+    destroy:
+      btn: Удалить
+      success: Пост удалён
+  comments:
+    create:
+      success: Комментарий создан
+    edit:
+      btn: Редактировать
+      title: Редактирование комментария
+    update:
+      success: Комментарий изменён
+    destroy:
+      btn: Удалить
+      success: Комментарий удалён
+  views:
+    pagination:
+      first: ⇤
+      last: ⇥
+      previous: ←
+      next: →
+      truncate: …
